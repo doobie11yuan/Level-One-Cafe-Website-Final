@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods & Drinks Menu - Level One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+<header class="top">
+    <div class="left-nav">
+        <a href="index.html" class="logo" title="Home">
+            <img src="images/logo.jpg" alt="Level One logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+
+            <div class="dropdown">
+                <button class="dropbtn active" type="button">Menu <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="foods.html">Foods</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button">Entertainment <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="entertainment.html">KTV &amp; Games</a>
+                    <a href="booking.html">Booking Area</a>
+                </div>
+            </div>
+
+            <a href="registration.html">Registration</a>
+            <a href="about.html">Contact / About</a>
+        </nav>
+    </div>
+
+    <div class="top-right">
+        <button type="button" id="cartBtn" class="cart-btn">Cart <span id="cartCount" class="cart-count zero">0</span></button>
+        <button type="button" id="themeBtn" class="theme-btn">Dark Mode</button>
+        <a href="booking.html" class="signin">Book a Room</a>
+    </div>
+</header>
+
+<main class="content">
+    <h1>Foods &amp; Drinks Menu</h1>
+    <p class="subtitle">Here are the full food and drinks menu pictures for easy viewing.</p>
+
+    <section class="menu-preview">
+        <div class="menu-preview-card">
+            <h2>Foods Menu</h2>
+            <img src="images/Foods Menu.jpg" alt="Level One Foods Menu">
+            <a href="foods.html" class="btn">Back to Foods</a>
+        </div>
+
+        <div class="menu-preview-card">
+            <h2>Drinks Menu</h2>
+            <img src="images/Drinks Menu.jpg" alt="Level One Drinks Menu">
+            <a href="drinks.html" class="btn">Back to Drinks</a>
+        </div>
+    </section>
+</main>
+
+<footer class="bottom">
+    <div class="bottom-left">
+        <p class="copyright">© 2026 Level One</p>
+    </div>
+
+    <div class="bottom-middle">
+        <h3>Level One</h3>
+        <p>Games | KTV | Cafe | Resto</p>
+        <h3 class="footer-heading">Booking Area</h3>
+        <p><a href="booking.html">Reserve through the booking page</a></p>
+    </div>
+
+    <div class="bottom-right">
+        <h3>Follow Us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=61591984691120" target="_blank" rel="noopener">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button type="button" id="closeCartBtn" class="close-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <ul id="cartItems" class="cart-items"></ul>
+
+        <div class="cart-footer">
+            <p class="cart-total">Total: <strong id="cartTotal">₱0.00</strong></p>
+            <button type="button" id="checkoutBtn" class="btn">Checkout</button>
+            <button type="button" id="clearCartBtn" class="btn secondary-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

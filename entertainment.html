@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment - Level One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+<header class="top">
+    <div class="left-nav">
+        <a href="index.html" class="logo" title="Home">
+            <img src="images/logo.jpg" alt="Level One logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button">Menu <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="foods.html">Foods</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn active" type="button">Entertainment <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="entertainment.html">KTV &amp; Games</a>
+                    <a href="booking.html">Booking Area</a>
+                </div>
+            </div>
+
+            <a href="registration.html">Registration</a>
+            <a href="about.html">Contact / About</a>
+        </nav>
+    </div>
+
+    <div class="top-right">
+        <button type="button" id="cartBtn" class="cart-btn">Cart <span id="cartCount" class="cart-count zero">0</span></button>
+        <button type="button" id="themeBtn" class="theme-btn">Dark Mode</button>
+        <a href="booking.html" class="signin">Book a Room</a>
+    </div>
+</header>
+
+<main class="content">
+    <h1>Entertainment</h1>
+    <p class="subtitle">Relax, play, sing, and spend time with your friends at Level One.</p>
+
+    <div class="entertainment-hero">
+        <img src="images/enterntainment1.jpg" alt="Level One entertainment area">
+        <div>
+            <h2>KTV &amp; Games</h2>
+            <p class="story-text">Level One combines cafe and resto dining with entertainment, including KTV and games.</p>
+            <a class="btn top-gap" href="booking.html">Go to Booking Area</a>
+        </div>
+    </div>
+
+    <div class="section-title">Entertainment Gallery</div>
+
+    <div class="cards">
+        <article class="card">
+            <img class="product-img" src="images/enterntainment1.jpg" alt="Level One entertainment room">
+            <h3>Entertainment Area</h3>
+            <p>A look at the Level One entertainment space.</p>
+        </article>
+        <article class="card">
+            <img class="product-img" src="images/enterntainment2.jpg" alt="Level One entertainment setup">
+            <h3>KTV &amp; Games</h3>
+            <p>Enjoy entertainment with friends and family.</p>
+        </article>
+        <article class="card">
+            <img class="product-img" src="images/videoke.jpg" alt="Level One videoke">
+            <h3>Videoke</h3>
+            <p>Sing along and enjoy the videoke experience.</p>
+        </article>
+    </div>
+
+    <div class="section-title">Booking Area</div>
+
+    <div class="booking-box">
+        <h2>Ready to book?</h2>
+        <p>Use the Level One booking area to continue to the official booking page for entertainment reservations.</p>
+        <a class="btn" href="https://levelone-ktv-production.up.railway.app/" target="_blank" rel="noopener">Open Booking Area</a>
+    </div>
+</main>
+
+<footer class="bottom">
+    <div class="bottom-left">
+        <p class="copyright">© 2026 Level One</p>
+    </div>
+
+    <div class="bottom-middle">
+        <h3>Level One</h3>
+        <p>Games | KTV | Cafe | Resto</p>
+        <h3 class="footer-heading">Booking Area</h3>
+        <p><a href="booking.html">Reserve through the booking page</a></p>
+    </div>
+
+    <div class="bottom-right">
+        <h3>Follow Us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=61591984691120" target="_blank" rel="noopener">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button type="button" id="closeCartBtn" class="close-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <ul id="cartItems" class="cart-items"></ul>
+
+        <div class="cart-footer">
+            <p class="cart-total">Total: <strong id="cartTotal">₱0.00</strong></p>
+            <button type="button" id="checkoutBtn" class="btn">Checkout</button>
+            <button type="button" id="clearCartBtn" class="btn secondary-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

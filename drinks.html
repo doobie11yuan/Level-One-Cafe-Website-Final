@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - Level One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+<header class="top">
+    <div class="left-nav">
+        <a href="index.html" class="logo" title="Home">
+            <img src="images/logo.jpg" alt="Level One logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+
+            <div class="dropdown">
+                <button class="dropbtn active" type="button">Menu <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="foods.html">Foods</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button">Entertainment <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="entertainment.html">KTV &amp; Games</a>
+                    <a href="booking.html">Booking Area</a>
+                </div>
+            </div>
+
+            <a href="registration.html">Registration</a>
+            <a href="about.html">Contact / About</a>
+        </nav>
+    </div>
+
+    <div class="top-right">
+        <button type="button" id="cartBtn" class="cart-btn">Cart <span id="cartCount" class="cart-count zero">0</span></button>
+        <button type="button" id="themeBtn" class="theme-btn">Dark Mode</button>
+        <a href="booking.html" class="signin">Book a Room</a>
+    </div>
+</header>
+
+<main class="content">
+    <h1>Drinks</h1>
+    <p class="subtitle">Coffee and refreshing drinks prepared for your Level One visit.</p>
+
+    <section class="featured-menu">
+        <a href="menus.html" class="menu-image-link">
+            <img src="images/all of drinks.jpg" alt="All Level One drinks">
+        </a>
+        <div class="featured-menu-text">
+            <h2>All Drinks</h2>
+            <p>Click the drinks picture or the button below to see the full menu.</p>
+            <a href="menus.html" class="btn">More Orders</a>
+        </div>
+    </section>
+
+    <div class="section-title">Drink Orders</div>
+
+    <div class="cards">
+        <article class="card product-card">
+            <img class="product-img" src="images/matcha latte.jpg" alt="Matcha Latte">
+            <h3>Matcha Latte</h3>
+            <p>A creamy matcha drink for a refreshing break.</p>
+            <p class="price">₱168</p>
+            <button type="button" class="btn small-btn add-btn" data-name="Matcha Latte" data-price="168" data-image="images/matcha latte.jpg">Add to Cart</button>
+        </article>
+        <article class="card product-card">
+            <img class="product-img" src="images/mocha latte.jpg" alt="Mocha Latte">
+            <h3>Mocha Latte</h3>
+            <p>Coffee and chocolate flavors in one drink.</p>
+            <select class="drink-type" aria-label="Hot or iced">
+                <option value="138" data-label="Hot">Hot - ₱138</option>
+                <option value="148" data-label="Iced">Iced - ₱148</option>
+            </select>
+            <button type="button" class="btn small-btn add-btn" data-name="Mocha Latte" data-price="138" data-image="images/mocha latte.jpg">Add to Cart</button>
+        </article>
+        <article class="card product-card">
+            <img class="product-img" src="images/nutella latte.jpg" alt="Nutella Latte">
+            <h3>Nutella Latte</h3>
+            <p>A sweet, chocolate-hazelnut inspired latte.</p>
+            <select class="drink-type" aria-label="Hot or iced">
+                <option value="158" data-label="Hot">Hot - ₱158</option>
+                <option value="168" data-label="Iced">Iced - ₱168</option>
+            </select>
+            <button type="button" class="btn small-btn add-btn" data-name="Nutella Latte" data-price="158" data-image="images/nutella latte.jpg">Add to Cart</button>
+        </article>
+        <article class="card product-card">
+            <img class="product-img" src="images/salted caramel.jpg" alt="Salted Caramel">
+            <h3>Salted Caramel</h3>
+            <p>A smooth caramel-style drink with a sweet and salty taste.</p>
+            <select class="drink-type" aria-label="Hot or iced">
+                <option value="138" data-label="Hot">Hot - ₱138</option>
+                <option value="148" data-label="Iced">Iced - ₱148</option>
+            </select>
+            <button type="button" class="btn small-btn add-btn" data-name="Salted Caramel" data-price="138" data-image="images/salted caramel.jpg">Add to Cart</button>
+        </article>
+    </div>
+</main>
+
+<footer class="bottom">
+    <div class="bottom-left">
+        <p class="copyright">© 2026 Level One</p>
+    </div>
+
+    <div class="bottom-middle">
+        <h3>Level One</h3>
+        <p>Games | KTV | Cafe | Resto</p>
+        <h3 class="footer-heading">Booking Area</h3>
+        <p><a href="booking.html">Reserve through the booking page</a></p>
+    </div>
+
+    <div class="bottom-right">
+        <h3>Follow Us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=61591984691120" target="_blank" rel="noopener">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button type="button" id="closeCartBtn" class="close-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <ul id="cartItems" class="cart-items"></ul>
+
+        <div class="cart-footer">
+            <p class="cart-total">Total: <strong id="cartTotal">₱0.00</strong></p>
+            <button type="button" id="checkoutBtn" class="btn">Checkout</button>
+            <button type="button" id="clearCartBtn" class="btn secondary-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

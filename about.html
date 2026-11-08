@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & About - Level One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+<header class="top">
+    <div class="left-nav">
+        <a href="index.html" class="logo" title="Home">
+            <img src="images/logo.jpg" alt="Level One logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button">Menu <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="foods.html">Foods</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button">Entertainment <span>▾</span></button>
+                <div class="dropdown-content">
+                    <a href="entertainment.html">KTV &amp; Games</a>
+                    <a href="booking.html">Booking Area</a>
+                </div>
+            </div>
+
+            <a href="registration.html">Registration</a>
+            <a href="about.html" class="active">Contact / About</a>
+        </nav>
+    </div>
+
+    <div class="top-right">
+        <button type="button" id="cartBtn" class="cart-btn">Cart <span id="cartCount" class="cart-count zero">0</span></button>
+        <button type="button" id="themeBtn" class="theme-btn">Dark Mode</button>
+        <a href="booking.html" class="signin">Book a Room</a>
+    </div>
+</header>
+
+<main class="content">
+    <h1>About Level One</h1>
+    <p class="subtitle">A cafe, resto, and entertainment place built around food, games, coffee, and good company.</p>
+
+    <div class="section-title">Company Profile</div>
+    <p class="story-text">
+        Level One is presented as a multi-purpose destination offering
+        <span class="highlight">Games, KTV, Cafe, and Resto</span>.
+        The website brings its food, drinks, entertainment, and booking information together in one simple layout.
+    </p>
+
+    <div class="section-title">Business Information</div>
+
+    <table>
+        <tr><th>Information</th><th>Details</th></tr>
+        <tr><td>Business Name</td><td>Level One</td></tr>
+        <tr><td>Business Type</td><td>Games | KTV | Cafe | Resto</td></tr>
+        <tr><td>Main Offerings</td><td>Food, drinks, coffee, games, KTV and entertainment</td></tr>
+        <tr><td>Booking</td><td>Level One KTV booking website</td></tr>
+        <tr><td>Social Media</td><td>Facebook</td></tr>
+    </table>
+
+    <div class="section-title">Mini Grocery</div>
+
+    <section class="grocery-box">
+        <img src="images/mini-grocery.jpg" alt="Level One mini grocery">
+        <div>
+            <h2>Level One Mini Grocery</h2>
+            <p class="story-text">
+                Convenient grocery items are also available at Level One. This section keeps the mini grocery information on the About page instead of the Menu dropdown.
+            </p>
+            <p><strong>For available items and prices, ask at the store.</strong></p>
+        </div>
+    </section>
+
+    <div class="section-title">Contact Us</div>
+    <p class="contact-details">
+        For updates, messages, and current business information, visit the Level One Facebook page.
+    </p>
+    <p class="social-line">
+        <a href="https://www.facebook.com/profile.php?id=61591984691120" target="_blank" rel="noopener">Visit Level One on Facebook</a>
+    </p>
+
+    <div class="section-title">Message Form</div>
+
+    <form action="index.html" method="get" class="contact-form" novalidate data-validate="contact">
+        <div class="form-grid">
+            <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" autocomplete="name">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn" type="submit">Send Message</button>
+        </div>
+    </form>
+</main>
+
+<footer class="bottom">
+    <div class="bottom-left">
+        <p class="copyright">© 2026 Level One</p>
+    </div>
+
+    <div class="bottom-middle">
+        <h3>Level One</h3>
+        <p>Games | KTV | Cafe | Resto</p>
+        <h3 class="footer-heading">Booking Area</h3>
+        <p><a href="booking.html">Reserve through the booking page</a></p>
+    </div>
+
+    <div class="bottom-right">
+        <h3>Follow Us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=61591984691120" target="_blank" rel="noopener">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button type="button" id="closeCartBtn" class="close-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <ul id="cartItems" class="cart-items"></ul>
+
+        <div class="cart-footer">
+            <p class="cart-total">Total: <strong id="cartTotal">₱0.00</strong></p>
+            <button type="button" id="checkoutBtn" class="btn">Checkout</button>
+            <button type="button" id="clearCartBtn" class="btn secondary-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
