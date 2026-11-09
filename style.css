@@ -123,7 +123,7 @@ img {
 .home-page {
     color: #fff;
     background: linear-gradient(#230a45ad, #230a45b8),
-        url("images/backgroundpicture.jpg") center / cover fixed no-repeat;
+        url("backgroundpicture.jpg") center / cover fixed no-repeat;
 }
 
 .home-page .main-nav a,
@@ -1038,7 +1038,7 @@ body.dark {
 
 body.home-page.dark {
     background: linear-gradient(#0a0414e0, #0a0414eb),
-        url("images/backgroundpicture.jpg") center / cover fixed no-repeat;
+        url("backgroundpicture.jpg") center / cover fixed no-repeat;
 }
 
 body.dark .main-nav a,
