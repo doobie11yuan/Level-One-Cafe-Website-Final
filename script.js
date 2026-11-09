@@ -1,9 +1,13 @@
 //main features:
-//dark mode or light mode
+//dark mode or light mode in any file
 //shopping cart (add, + and -, remove, clear, total)
+//shopping cart save system
+//responsiveness for phone and and tablet
+//dropdown menu responsive because in pc you hover to open and in phone you tap
+//iframe maps ebedded feature
+//animations on food selection
 //order confirm
 //order reciept
-//dropdown menu responsive because in pc you hover to open and in phone you tap
 
 const themeBtn = document.getElementById('themeBtn');
 
